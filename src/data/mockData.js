@@ -39,6 +39,8 @@ export const COLLECTIONS = [
     displayOrder: 1,
     totalVolumes: 10,
     tags: ['quran', 'tafsir', 'ibn kathir', 'classical', 'hadith-based'],
+    // Ayah-mode data slug — matches folder in public/data/tafsir/
+    dataSlug: 'ibn-kathir',
   },
   {
     id: 'maariful-quran',

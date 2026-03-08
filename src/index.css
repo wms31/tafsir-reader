@@ -254,3 +254,38 @@
   animation: flipInLeft 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   transform-origin: right center;
 }
+
+/* Ayah card fade-in stagger */
+@keyframes ayahFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ayah-fade-in {
+  animation: ayahFadeIn 0.3s ease-out both;
+}
+
+/* Tafsir drawer slide up */
+@keyframes drawerSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Quran browser surah item hover */
+.surah-item {
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.surah-item:active {
+  transform: scale(0.99);
+}

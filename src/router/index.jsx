@@ -7,6 +7,8 @@ import CollectionPage from '../pages/CollectionPage.jsx'
 import ReaderPage from '../pages/ReaderPage.jsx'
 import BookmarksPage from '../pages/BookmarksPage.jsx'
 import SettingsPage from '../pages/SettingsPage.jsx'
+import QuranBrowserPage from '../pages/QuranBrowserPage.jsx'
+import SurahReaderPage from '../pages/SurahReaderPage.jsx'
 
 export const router = createBrowserRouter([
   {
@@ -16,26 +18,15 @@ export const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-      {
-        path: '/home',
-        element: <HomePage />,
-      },
-      {
-        path: '/collection/:collectionId',
-        element: <CollectionPage />,
-      },
-      {
-        path: '/bookmarks',
-        element: <BookmarksPage />,
-      },
-      {
-        path: '/settings',
-        element: <SettingsPage />,
-      },
+      { path: '/home', element: <HomePage /> },
+      { path: '/collection/:collectionId', element: <CollectionPage /> },
+      { path: '/bookmarks', element: <BookmarksPage /> },
+      { path: '/settings', element: <SettingsPage /> },
+      // Quran browser — surah list within a collection
+      { path: '/quran/:collectionId', element: <QuranBrowserPage /> },
     ],
   },
-  {
-    path: '/reader/:collectionId/:bookId',
-    element: <ReaderPage />,
-  },
+  // Full-screen readers (no bottom nav)
+  { path: '/reader/:collectionId/:bookId', element: <ReaderPage /> },
+  { path: '/quran/:collectionId/surah/:surahNumber', element: <SurahReaderPage /> },
 ])

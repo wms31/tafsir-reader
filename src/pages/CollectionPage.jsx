@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, BookMarked, Layers } from 'lucide-react'
 import { getCollection, getBooksByCollection } from '../data/mockData.js'
 import { getProgress } from '../services/progressService.js'
 import SearchInput from '../components/ui/SearchInput.jsx'
@@ -84,6 +84,35 @@ export default function CollectionPage() {
             ))}
           </div>
         </div>
+
+        {/* Reading mode switcher */}
+        {collection.dataSlug && (
+          <div className="px-4 pb-4">
+            <div className="grid grid-cols-2 gap-2">
+              <div
+                className="flex items-center gap-2.5 px-4 py-3 rounded-xl cursor-default"
+                style={{ backgroundColor: 'var(--color-accent-muted)', border: '1px solid var(--color-accent)' }}
+              >
+                <Layers className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--color-accent)' }} />
+                <div>
+                  <p className="text-xs font-semibold" style={{ color: 'var(--color-accent)' }}>PDF Volumes</p>
+                  <p className="text-xs" style={{ color: 'var(--color-text-muted)', fontSize: '10px' }}>Read full volumes</p>
+                </div>
+              </div>
+              <button
+                onClick={() => navigate(`/quran/${collectionId}`)}
+                className="flex items-center gap-2.5 px-4 py-3 rounded-xl active:scale-[0.98] transition-transform"
+                style={{ backgroundColor: 'var(--color-bg-elevated)', border: '1px solid var(--color-border)' }}
+              >
+                <BookMarked className="w-4 h-4 flex-shrink-0" style={{ color: 'var(--color-text-secondary)' }} />
+                <div className="text-left">
+                  <p className="text-xs font-semibold" style={{ color: 'var(--color-text-primary)' }}>By Ayah</p>
+                  <p className="text-xs" style={{ color: 'var(--color-text-muted)', fontSize: '10px' }}>Interactive view</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* Search */}
         <div className="px-4 pb-4">
