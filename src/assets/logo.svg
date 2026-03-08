@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <!-- Book icon -->
+  <rect x="2" y="4" width="22" height="32" rx="3" stroke="#c9a84c" stroke-width="1.5" fill="none"/>
+  <path d="M24 4v28" stroke="#c9a84c" stroke-width="1.5"/>
+  <path d="M8 16h12M8 22h9" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Wordmark -->
+  <text x="34" y="27" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#f0ead6" letter-spacing="-0.5">Tafsir</text>
+</svg>

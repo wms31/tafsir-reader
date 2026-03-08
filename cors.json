@@ -1,0 +1,15 @@
+{
+  "rules": [
+    {
+      "allowed_origins": [
+        "https://tafsir-reader.web.app",
+        "https://tafsir-reader.firebaseapp.com",
+        "http://localhost:5173"
+      ],
+      "allowed_methods": ["GET", "HEAD"],
+      "allowed_headers": ["*"],
+      "expose_headers": ["Content-Length", "Content-Type"],
+      "max_age_seconds": 86400
+    }
+  ]
+}

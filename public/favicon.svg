@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="110" fill="#1a1f2e"/>
+
+  <!-- Subtle inner glow ring -->
+  <rect x="24" y="24" width="464" height="464" rx="90" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.15"/>
+
+  <!-- Open book shape - left page -->
+  <path d="M256 160
+    C220 148 170 144 128 148
+    L120 152
+    C116 154 114 158 114 162
+    L114 348
+    C114 354 120 358 126 356
+    C168 348 218 350 256 364
+    Z"
+    fill="#c9a84c" opacity="0.12"/>
+  <path d="M256 160
+    C220 148 170 144 128 148
+    L120 152
+    C116 154 114 158 114 162
+    L114 348
+    C114 354 120 358 126 356
+    C168 348 218 350 256 364
+    Z"
+    fill="none" stroke="#c9a84c" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Open book shape - right page -->
+  <path d="M256 160
+    C292 148 342 144 384 148
+    L392 152
+    C396 154 398 158 398 162
+    L398 348
+    C398 354 392 358 386 356
+    C344 348 294 350 256 364
+    Z"
+    fill="#c9a84c" opacity="0.12"/>
+  <path d="M256 160
+    C292 148 342 144 384 148
+    L392 152
+    C396 154 398 158 398 162
+    L398 348
+    C398 354 392 358 386 356
+    C344 348 294 350 256 364
+    Z"
+    fill="none" stroke="#c9a84c" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Center spine -->
+  <line x1="256" y1="158" x2="256" y2="366" stroke="#c9a84c" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Left page text lines -->
+  <line x1="142" y1="210" x2="236" y2="204" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="142" y1="232" x2="236" y2="227" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="142" y1="254" x2="236" y2="250" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="142" y1="276" x2="220" y2="272" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="142" y1="298" x2="236" y2="295" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right page text lines -->
+  <line x1="276" y1="204" x2="370" y2="210" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="276" y1="227" x2="370" y2="232" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+  <line x1="276" y1="250" x2="370" y2="254" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="276" y1="272" x2="354" y2="276" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+  <line x1="276" y1="295" x2="370" y2="298" stroke="#c9a84c" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Gold accent dot at top center -->
+  <circle cx="256" cy="148" r="7" fill="#c9a84c"/>
+  <circle cx="256" cy="366" r="5" fill="#c9a84c" opacity="0.6"/>
+</svg>
